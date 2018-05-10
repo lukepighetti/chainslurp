@@ -4,6 +4,7 @@ const config = require('./config.json');
 Firebase.initializeApp(config.firebase);
 const db = Firebase.database().ref('blocks');
 
+//db.remove(); // WARNING – UNCOMMENT ONLY IF YOU NEED TO DELETE THE DATABASE
 
 ////////////////
 

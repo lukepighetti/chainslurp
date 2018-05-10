@@ -21,7 +21,7 @@ async function slurpBlockchain(start, stop){
     return null
   }
 
-  let previousTime = 0;
+  let previousTime = lastStoredBlock ? lastStoredBlock.time: 0;
 
   for(i=start; i<=stop; i++){
     const blockHash = await getBlockHash(i)
