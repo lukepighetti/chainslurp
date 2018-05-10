@@ -43,7 +43,9 @@ async function slurpBlockchain(start, stop){
       height: blockInfo.height,
       difficulty: blockInfo.difficulty,
       time: blockInfo.time,
-      blocktime: blockTime
+      blocktime: blockTime,
+      retarget: 2016 - (blockInfo.height % 2016),
+      hashrate: blockInfo.height ? blockInfo.difficulty * Math.pow(2,32) / blockTime : null
     })
     console.log(`stored block ${blockInfo.height} with time ${blockInfo.time}`)
   }
