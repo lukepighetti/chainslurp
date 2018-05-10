@@ -1,0 +1,17 @@
+{
+    "firebase":{
+        "apiKey": "Ajksdfjkljdfkj-skdfjj8sd8fu8sjhdf8jsdjj",
+        "authDomain": "project333.firebaseapp.com",
+        "databaseURL": "https://project333.firebaseio.com",
+        "projectId": "project333",
+        "storageBucket": "project333.appspot.com",
+        "messagingSenderId": "200867348374"
+    },
+    "daemon":{
+        "protocol": "http",
+        "user": "bestuserever",
+        "pass": "password4you",
+        "host": "127.0.0.1",
+        "port": "18333"
+    }
+}
